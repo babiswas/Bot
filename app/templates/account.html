@@ -1,0 +1,23 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots">
+    <center>
+        <div class="panel">
+            <h2>Account</h2>
+        </div>
+        <form method="post">
+            <div>
+               <div><h3>{{form.name.label}}</h3></div>
+               <div>{{form.name}}</div>
+            </div>
+            <div>
+                <div><h3>{{form.email.label}}</h3></div>
+                <div>{{form.email}}</div>
+            </div>
+            <div >
+               <input type="submit" value="Submit">
+            </div>
+        </form>
+    </center>
+   </div>
+{% endblock %}

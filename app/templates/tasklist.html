@@ -1,0 +1,30 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots">
+    <center>
+        <div class="panel">
+            <h2>Task List</h2>
+        </div>
+        <div>
+            <table id="mytable">
+                <tr>
+                    <th>DateCreated</th>
+                    <th>Status</th>
+                    <th>Bot ID</th>
+                    <th>Created By</th>
+                </tr>
+                {% for t in task %}
+                <tr>
+                   <td>{{t.datecreated}}</td>
+                   <td>{{t.status}}</td>
+                   <td>{{t.botid}}</td>
+                   <td>{{t.created_by}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </center>
+   </div>
+{% endblock %}
+
+

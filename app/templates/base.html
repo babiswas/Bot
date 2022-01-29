@@ -1,0 +1,142 @@
+{% extends "home.html" %}
+{% block content %}
+    <div id="dashboard">
+        <div id="navbar">
+            <center><h2>Most Viewed Bots</h2></center>
+        </div>
+        <div id="topbots">
+            <center>
+                {% for bot in results %}
+            <div>
+                <div class="mostviewed">
+                    <center>
+                        <div>
+                            <img src="{{url_for('static',filename='botpath/'+bot.botname+'/'+bot.bot_pic)}}" alt="mybot" class="botimage">
+                        </div>
+                        <div>
+                            <h2><a href="">{{bot.botname}}</a></h2>
+                        </div>
+                        <div>
+                            <h2><a href="">{{bot.view}} Views</a></h2>
+                        </div>
+                        <div>
+                            <p>
+                             {{bot.description}}
+                            </p>
+                        </div>
+                        <div>
+                              <center>
+                                <button id="bid"><a href="{{url_for('read.bot_detail',botid=bot.id)}}">Visit</a></button>
+                              </center>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            {% endfor %}
+            </center>
+        </div>
+    </div>
+    <div id="botcontrol">
+        <div id="navbar">
+            <center><h2>Controls</h2></center>
+        </div>
+        <div id="usercontrols">
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>Profile</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('read.get_user_home')}}">My Profile</a></button>   
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>Box Configure</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('add.add_box_config')}}">Box</a></button>
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>Prime Configure</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('add.add_prime_config')}}">Prime</a></button>
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>List of Task</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('add.add_bot')}}">Task List</a></button>
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>List of Bots</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('read.bot_list')}}">All Bots</a></button>
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>Account</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('add.create_account')}}">Account</a></button>
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>Login/Logout</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('add.login')}}">Login</a></button>
+                    </center>
+                </div>
+            </div>
+            <div class="controlpanel">
+                <div class="subcontrolpanel">
+                    <center>
+                        <h3>Create Bot</h3>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button id="bid"><a href="{{url_for('add.add_bot')}}">Add Bot</a></button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "home.html" %}
+{% block content %}
+   <div >
+        <div id="sidepanel1">
+            <div id="imagepanel">
+                <center>
+                    <img src="{{url_for('static',filename='botpath/'+bot.botname+'/'+bot.bot_pic)}}" alt="mybot" id="botdetaiimage">
+                </center>
+            </div>
+            <div>
+                <center>
+                    <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="{{url_for('read.bot_detail',botid=bot.id)}}">Bot</a></button>
+                    <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="">View Stat</a></button>
+                    <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="">Subscribers</a></button>
+                    <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="">Comments</a></button>
+                    <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="{{url_for('myhome.landing_page')}}">Home</a></button>
+                    <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="{{url_for('read.bot_list')}}">Bots</a></button>
+                </center>
+            </div>
+        </div>
+        <div id="sidepanel2">
+               <aside>
+                    <h2 style="font-family:'fantasy';color:#1d2951;">Bot Name</h2>
+                    <hr class="one">
+                    <p style="font-family:'Lucida Sans';"><strong>{{bot.botname}}</strong></p>
+                    <h2 style="font-family:'fantasy';color:#1d2951;">Views</h2>
+                    <hr class="one">
+                    <p style="font-family:'Lucida Sans';"><strong>{{botview.view}}</strong></p>
+                    <h2 style="font-family:'fantasy';color:#1d2951;">Description</h2>
+                    <hr class="one">
+                    <p style="font-family:'Lucida Sans';"><strong>{{bot.description}}</strong></p>
+                    <h2 style="font-family:'fantasy';color:#1d2951;">Bot Etag</h2>
+                    <hr class="one">
+                    <p style="font-family:'Lucida Sans';"><strong>{{botcontent.etag}}</strong></p>
+                    <h2 style="font-family:'fantasy';color:#1d2951;">Bot URL</h2>
+                    <hr class="one">
+                    <p style="font-family:'Lucida Sans';"><strong>{{bot.url}}</strong></p>
+               </aside>
+               <center><button><a style="text-decoration:none;color:white;"href="{{url_for('read.read_bot',botid=bot.id)}}">Sync Bot</a></button></center>
+        </div>
+   </div>
+{% endblock %}

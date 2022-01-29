@@ -1,0 +1,524 @@
+header{
+    background-color:white;
+    color:#1d2951;
+    width:40%;
+    margin-top:-10px;
+    padding:4px;
+    margin-left:30%;
+    margin-right:30%;
+    position:sticky;
+    font-family: fantasy;
+}
+
+body{
+    background-color:#DCDCDC;
+}
+
+
+hr.one{
+   border:none;
+   height:1px;
+   background:#dddddd;
+}
+
+button{
+      background-color:#00AD83;
+      color:white;
+      text-align:center;
+      display:block;
+      border-radius:10px;
+      border:none;
+      margin-top:10px;
+      margin-bottom:10px;
+      width:100px;
+      height:25px;
+      font-size:15px;
+}
+
+#bid{
+}
+
+#bid a{
+  text-decoration:none;
+  color:white;
+}
+
+
+
+img{
+  border:1px solid #ddd;
+  border-radius:4px;
+  padding:5px;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+
+
+.botimage{
+  border:1px solid #ddd;
+  border-radius:4px;
+  padding:5px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+#botdetailimage{
+  border:1px solid #ddd;
+  border-radius:4px;
+  padding:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+}
+
+#botdetailimage a {
+  text-decoration:none;
+  color:black;
+}
+
+.primeform{
+  display:inline-block;
+  margin-right:1px;
+  margin-left:1px;
+  width:50%;
+}
+
+
+#iamgepanel{
+  margin-top:30px;
+}
+
+.btnd{
+
+}
+
+.btnd a{
+  text-decoration:none;
+  color:black;
+}
+
+
+#allbot{
+  width:100%;
+  height:100%
+}
+
+.newbot{
+  margin-top:20px;
+  background-color:white;
+  color:#00AD83;
+  width:20%;
+  height:25%;
+  margin-right:5px;
+  font-family:Arial, Helvetica, sans-serif;
+  display:inline-block;
+  box-shadow:0px 0px 20px 5px rgba(194, 180, 180, 0.5);
+  overflow:hidden;
+}
+
+.control{
+    background-color:white;
+    color:#1d2951;
+    width:90%;
+    height:auto;
+    margin-top:10px;
+    margin-left:5%;
+    margin-right:5%;
+    font-family: fantasy;
+}
+
+#dashboard{
+  width:100%;
+  height:50%;
+  margin-top:2px;
+  overflow:hidden;
+}
+
+#botcontrol{
+  width:100%;
+  height:50%;
+  margin-top:2px;
+  overflow:hidden;
+}
+
+#navbar{
+  background-color:#00AD83;
+  color:white;
+  width:30%;
+  height:40px;
+  margin-top:3px;
+  margin-left:35%;
+  margin-right:35%; 
+  font-family:funky;
+}
+
+#usercontrols{
+  height:760px;
+  width:100%;
+}
+
+.controlpanel{
+  background-color:white;
+  height:100px;
+  display:inline-block;
+  width:300px;
+  box-shadow:0px 0px 4px rgba(0,0,0,.5);
+  margin-right:15px;
+  margin-left:15px;
+  margin-top:40px;
+  overflow:hidden;
+}
+
+.subcontrolpanel{
+  background-color:#00AD83;
+  color:white;
+  width:100%;
+  height:30px;
+  margin-top:0px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#button{
+  background-color:#00AD83;
+  color:white;
+}
+
+
+#addbots{
+  background-color:white;
+  color:#00AD83;
+  width:30%;
+  margin-right:35%;
+  margin-left:35%;
+  height:auto;
+  box-shadow:0px 0px 20px 5px rgba(194, 180, 180, 0.5);
+  border-radius:5px;
+  margin-top:40px;
+  padding:20px;
+  font-family:funky;
+}
+
+#addbots input[type=text]{
+  width:80%;
+  padding:12px 20px;
+  outline:none;
+  border:0;
+  box-shadow:0px 0px 4px rgba(0,0,0,.5);
+  border-radius:4px;
+}
+
+#topbots{
+  width:100%;
+  height:360px;
+  display:inline-block;
+}
+
+
+#sidepanel1{
+  background-color:#00AD83;
+  color:white;
+  width:20%;
+  height:100%;
+  overflow:hidden;
+  display:inline-block;
+}
+
+
+#sidepanel2{
+  background-color:white;
+  color:#00AD83;
+  width:57%;
+  height:100%;
+  overflow:hidden;
+  display:inline-block;
+}
+
+
+.mostviewed{
+   display:inline-block;
+   margin-top:10px;
+   height:250px;
+   width:250px;
+   margin-right:10px;
+   margin-left:10px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   overflow:hidden;
+   float:left;
+   box-shadow:0px 0px 4px rgba(0,0,0,.5);
+}
+
+
+#addbots input[type=submit]{
+  margin-top:14px;
+  margin-bottom:14px;
+  background-color:#00AD83;
+  height:40px;
+  width:80px;
+  color:white;
+  border:0;
+  border-radius:20px;
+}
+
+
+.account{
+    background-color:white;
+    color:#4b0082;
+    width:30%;
+    margin-right:35%;
+    margin-left:35%;
+    height:auto;
+    box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+    border-radius:5px;
+    padding:40px;
+}
+
+
+.panel{
+    background-color:#00AD83;
+    color:white;
+    font-size:15px;
+    width:98%;
+    height:10%;
+    padding:2px;
+    overflow:hidden;
+}
+
+.account input[type=text]{
+    width:80%;
+    padding:12px 20px;
+    outline:none;
+    border:0;
+    box-shadow:0px 0px 4px rgba(0,0,0,.5);
+    border-radius:4px;
+}
+
+.account input[type=submit]{
+    margin-top:14px;
+    margin-bottom:14px;
+    background-color:#4b0082;
+    height:40px;
+    width:80px;
+    color:white;
+    border:0;
+    border-radius:3px;
+}
+
+
+#rootuser{
+background-color:white;
+color:#4b0082;
+width:30%;
+margin-right:35%;
+margin-left:35%;
+height:auto;
+box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+border-radius:5px;
+padding:40px;
+}
+
+#rootuser input[type=text]{
+    width:80%;
+    padding:12px 20px;
+    outline:none;
+    border:0;
+    box-shadow:0px 0px 4px rgba(0,0,0,.5);
+    border-radius:4px;
+}
+
+#rootuser input[type=submit]{
+    margin-top:14px;
+    margin-bottom:14px;
+    background-color:#4b0082;
+    height:40px;
+    width:80px;
+    color:white;
+    border:0;
+    border-radius:3px;
+}
+
+
+#usergroup{
+background-color:white;
+color:#4b0082;
+width:30%;
+margin-right:35%;
+margin-left:35%;
+height:auto;
+box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+border-radius:5px;
+padding:40px;
+}
+
+
+#usergroup input[type=text]{
+    width:80%;
+    padding:12px 20px;
+    outline:none;
+    border:0;
+    box-shadow:0px 0px 4px rgba(0,0,0,.5);
+    border-radius:4px;
+}
+
+
+#usergroup input[type=submit]{
+    margin-top:14px;
+    margin-bottom:14px;
+    background-color:#4b0082;
+    height:40px;
+    width:80px;
+    color:white;
+    border:0;
+    border-radius:3px;
+}
+
+
+table{
+    width:30%;
+    border:1px solid black;
+    border-collapse:collapse;
+  }
+  
+  #mytable{
+    margin-top:20px;
+  }
+  
+  #mytable td ,#mytable th{
+    border:1px solid #ddd;
+    padding:8px;
+  }
+  
+  #mytable th{
+    background-color:#00AD83;
+    color:white;
+  }
+  
+  #mytable td{
+    background-color:#fffff1;
+    color:#00AD83;
+  }
+
+
+  #userpanel{
+    background-color:white;
+    color:#4b0082;
+    width:30%;
+    margin-right:35%;
+    margin-left:35%;
+    height:auto;
+    box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+    border-radius:5px;
+    margin-top:40px;
+    padding:20px;
+  }
+
+  #departmentpanel{
+    background-color:white;
+    color:#4b0082;
+    width:30%;
+    margin-right:35%;
+    margin-left:35%;
+    height:auto;
+    box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+    border-radius:5px;
+    margin-top:40px;
+    padding:20px;
+  }
+
+  #dashboard{
+      width:100%;
+      display:inline-block;
+  }
+
+  
+
+#groupuser{
+  background-color:white;
+  color:#4b0082;
+  width:30%;
+  margin-right:35%;
+  margin-left:35%;
+  height:auto;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+  border-radius:5px;
+  margin-top:40px;
+  padding:20px;
+}
+
+.panel1{
+    background-color:#4b0082;
+    color:white;
+    font-size:15px;
+    width:30%;
+    margin-right:35%;
+    margin-left:35%;
+    height:8%;
+    padding:2px;
+    overflow:hidden;
+    margin-top:40px;
+    margin-bottom:40px;
+    border-radius:4px;
+    padding:4px;
+}
+
+.panel1 p a{
+  text-decoration:none;
+}
+
+.panel1 p a{
+  text-decoration:none;
+  color:white;
+}
+
+
+#usergrouppanel{
+  width:100%;
+  height:20%;
+  display:inline-block;
+  background-color:white;
+  color:#4b0082;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+  border-radius:5px;
+  padding:40px;
+  margin-bottom:20px;
+  margin-top:20px;
+  }
+
+
+  #adminaction{
+     width:15%;
+     height:15%;
+     margin-left:20px;
+     margin-right:20px;
+     background-color:white;
+     color:#4b0082;
+     box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+     float:left;  
+     border-radius:5px;
+     overflow:hidden;
+  }
+
+  #usergroupdetail{
+  width:100%;
+  height:auto;
+  background-color:white;
+  color:#4b0082;
+  height:auto;
+  box-shadow:0px 0px 20px 5px rgba(0,0,0,.5);
+  border-radius:5px;
+  padding:40px;
+  margin-bottom:20px;
+  margin-top:20px;
+
+  }
+
+
+
+
+
+
+
+

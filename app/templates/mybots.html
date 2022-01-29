@@ -1,0 +1,29 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots">
+    <center>
+        <div class="panel">
+            <h2>My Bots</h2>
+        </div>
+        <div>
+            {% for bot in bots %}
+               <div>
+                   <div>
+                       <h2><a href="{{url_for('read.bot_detail',botid=bot.id)}}">{{bot.botname}}</a></h2>
+                   </div>
+                   <div>
+                       <p>
+                        {{bot.description}}
+                       </p>
+                   </div>
+                   <div>
+                       <p>
+                         {{bot.url}}
+                       </p>
+                   </div>
+               </div>
+            {% endfor %}
+        </div>
+    </center>
+   </div>
+{% endblock %}

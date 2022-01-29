@@ -1,0 +1,30 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots">
+    <center>
+        <div class="panel">
+            <h2>Add Bot</h2>
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+               <div><h3>{{form.url.label}}</h3></div>
+               <div>{{form.url}}</div>
+            </div>
+            <div>
+                <div><h3>{{form.botname.label}}</h3></div>
+                <div>{{form.botname}}</div>
+            </div>
+            <div>
+               <div><h3>{{form.description.label}}</h3></div>
+               <div>{{form.description}}</div>
+            </div>
+            <div>
+                <input type="file" name="file">
+            </div>
+            <div >
+               <input type="submit" value="Submit">
+            </div>
+        </form>
+    </center>
+   </div>
+{% endblock %}

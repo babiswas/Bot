@@ -1,0 +1,31 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots">
+    <center>
+        <div class="panel">
+            <h2>Configure Box</h2>
+        </div>
+        <form method="post">
+            <div>
+               <div><h3>{{form.appname.label}}</h3></div>
+               <div>{{form.appname}}</div>
+            </div>
+            <div>
+                <div><h3>{{form.clientid.label}}</h3></div>
+                <div>{{form.clientid}}</div>
+            </div>
+            <div>
+               <div><h3>{{form.clientsecret.label}}</h3></div>
+               <div>{{form.clientsecret}}</div>
+            </div>
+            <div>
+                <div><h3>{{form.folderid.label}}</h3></div>
+                <div>{{form.folderid}}</div>
+            </div>
+             <div >
+               <input type="submit" value="Submit">
+             </div>
+        </form>
+    </center>
+   </div>
+{% endblock %}

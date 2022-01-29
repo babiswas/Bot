@@ -1,0 +1,43 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="">
+    <center>
+        <div class="panel" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <h2>All Bots</h2>
+        </div>
+        <div id="allbot">
+            <div>
+                {% for bot in bots.items %}
+                   <div class="newbot">
+                       <div>
+                           <img src="{{url_for('static',filename='botpath/'+bot.botname+'/'+bot.bot_pic)}}" alt="mybot" class="botimage">
+                       </div>
+                       <div>
+                           <h2><a href="{{url_for('read.bot_detail',botid=bot.id)}}">{{bot.botname}}</a></h2>
+                       </div>
+                       <div>
+                           <p>
+                            {{bot.description}}
+                           </p>
+                       </div>
+                   </div>
+                {% endfor %}
+            </div>
+            <div style="height:40px;width:40%;margin-right:30%;margin-left:30%;display:inline-block;">
+                {% if prev_url or next_url %}
+                      {% if prev_url %}
+                         <div>
+                             <button class="btnd" style="color:white;"><a href={{prev_url}}>Prev</a></button>
+                         </div>
+                      {% endif %}
+                      {% if next_url %}
+                         <div>
+                             <button class="btnd" style="color:white;"><a href={{next_url}}>Next</a></button>
+                         </div>
+                      {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </center>
+   </div>
+{% endblock %}

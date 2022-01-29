@@ -1,0 +1,49 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots" style="width:80%;margin-right:10%;margin-left:10%;">
+    <center>
+            <div class="panel">
+                <h2>Configure Prime</h2>
+            </div>
+            <form method="post">
+                <div>
+                    <div class="primeform">
+                        <div>
+                            <div><h3>{{form.appname.label}}</h3></div>
+                            <div>{{form.appname}}</div>
+                        </div>
+                        <div>
+                            <div><h3>{{form.clientid.label}}</h3></div>
+                            <div>{{form.clientid}}</div>
+                        </div>
+                        <div>
+                            <div><h3>{{form.clientsecret.label}}</h3></div>
+                            <div>{{form.clientsecret}}</div>
+                        </div>
+                        <div>
+                            <div><h3>{{form.server.label}}</h3></div>
+                            <div>{{form.server}}</div>
+                        </div>
+                    </div>
+                    <div class="primeform">
+                        <div>
+                            <div><h3>{{form.email.label}}</h3></div>
+                            <div>{{form.email}}</div>
+                        </div>
+                        <div>
+                            <div><h3>{{form.redirecturi.label}}</h3></div>
+                            <div>{{form.redirecturi}}</div>
+                        </div>
+                        <div>
+                            <div><h3>{{form.primeaccount.label}}</h3></div>
+                            <div>{{form.primeaccount}}</div>
+                        </div>
+                    </div> 
+                </div>
+                <div >
+                     <input type="submit" value="Submit">
+                </div>
+            </form>
+    </center>
+   </div>
+{% endblock %}

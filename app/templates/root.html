@@ -1,0 +1,35 @@
+{% extends "home.html" %}
+{% block content %}
+   <div id="addbots">
+    <center>
+        <div class="panel">
+            <h2>Create Account</h2>
+        </div>
+        <form method="post">
+            <div>
+               <div><h3>{{form.firstname.label}}</h3></div>
+               <div>{{form.firstname}}</div>
+            </div>
+            <div>
+                <div><h3>{{form.lastname.label}}</h3></div>
+                <div>{{form.lastname}}</div>
+            </div>
+            <div>
+               <div><h3>{{form.username.label}}</h3></div>
+               <div>{{form.username}}</div>
+            </div>
+            <div>
+                <div><h3>{{form.password.label}}</h3></div>
+                <div>{{form.password}}</div>
+             </div>
+             <div>
+                <div><h3>{{form.confirm.label}}</h3></div>
+                <div>{{form.confirm}}</div>
+             </div>
+            <div >
+               <input type="submit" value="Submit">
+            </div>
+        </form>
+    </center>
+   </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='./main.css')}}">
+  </head>
+  <body>
+      <header>
+        <center><img src="{{url_for('static',filename='autobott.jpg')}}" class="autobot" ></center><center><h1>Optimus Prime</h1></center>
+      </header>
+      <div class="control">
+          {% block content %}
+          {% endblock %}
+      </div>
+  </body>
+</html>

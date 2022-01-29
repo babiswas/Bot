@@ -1,0 +1,49 @@
+{% extends "home.html" %}
+{% block content %}
+   <div>
+    <div style="background-color: lightpink;width:40%;height:40px;">
+        {% if messages %}
+            {% with messages=get_flashed_messages() %}
+                {% for msg in messages %}
+                      <p>{{msg}}</p>
+                {% endfor %}
+            {% endwith %}
+        {% endif %}
+       </div>
+        <div >
+            <div id="sidepanel1">
+                <div>
+                    <center>
+                        <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="{{url_for('read.prime_oauth')}}">Connect</a></button>
+                        <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="{{url_for('read.get_user_home')}}">User Home</a></button>
+                        <button style="background-color:white;color:black;margin-top:15px;margin-bottom:15px;" class="btnd"><a href="{{url_for('read.migrate_csv')}}">Migration</a></button>
+                    </center>
+                </div>
+            </div>
+            <div id="sidepanel2">
+                   <aside>
+                        <h2 style="font-family:'fantasy';color:#1d2951;">App Name</h2>
+                        <hr class="one">
+                        <p style="font-family:'Lucida Sans';"><strong>{{prime.appname}}</strong></p>
+                        <h2 style="font-family:'fantasy';color:#1d2951;">Client ID</h2>
+                        <hr class="one">
+                        <p style="font-family:'Lucida Sans';"><strong>{{prime.clientid}}</strong></p>
+                        <h2 style="font-family:'fantasy';color:#1d2951;">Client Secret</h2>
+                        <hr class="one">
+                        <p style="font-family:'Lucida Sans';"><strong>{{prime.clientsecret}}</strong></p>
+                        <h2 style="font-family:'fantasy';color:#1d2951;">Server Adress</h2>
+                        <hr class="one">
+                        <p style="font-family:'Lucida Sans';"><strong>{{prime.server}}</strong></p>
+                        <h2 style="font-family:'fantasy';color:#1d2951;">Redirect URI</h2>
+                        <hr class="one">
+                        <p style="font-family:'Lucida Sans';"><strong>{{prime.redirecturi}}</strong></p>
+                        <h2 style="font-family:'fantasy';color:#1d2951;">Prime Account</h2>
+                        <hr class="one">
+                        <p style="font-family:'Lucida Sans';"><strong>{{prime.primeaccount}}</strong></p>
+                   </aside>
+            </div>
+        </div>
+   </div>
+{% endblock %}
+
+
